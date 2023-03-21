@@ -1,0 +1,94 @@
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+
+@layer base {
+    html {
+      @apply text-secondary;
+    }
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    opacity:1;
+    transition:opacity 0.3s;
+}
+html.no-js{
+    opacity:0;
+}
+
+.slider01 .slick-list{
+    overflow:visible;
+}
+
+.slider01 .slick-dots{
+    display:none !important;
+}
+.slider01 .slick-arrow{
+    position:absolute;
+    width:64px;
+    height:64px;
+    border:1px solid #DBDBDB;
+    overflow:hidden;
+    font-size:0;
+    color:#fff;
+    top:50%;
+    transform:translateY(-50%);
+    background:#fff;
+    z-index:10
+}
+.slider01 .slick-arrow:hover{
+    border-color:#E30613;
+}
+.slider01 .slick-arrow.slick-next{
+    right:-64px;
+}
+.slider01 .slick-arrow.slick-prev{
+    left:-64px;
+}
+
+.slider01 .slick-arrow:after{
+    content:"\e940";
+    font-family:"xeicon";
+    font-size:30px;
+    color:#151617
+}
+.slider01 .slick-arrow:hover:after{
+    color:#E30613;
+}
+
+.slider01 .slick-arrow.slick-next:after{
+    content:"\e940";
+}
+.slider01 .slick-arrow.slick-prev:after{
+    content:"\e93d";
+}
+
+
+/* 모바일모드 공통 */
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+
+    .slider01 .slick-dots{
+        display:flex !important;
+        justify-content: center;
+        margin-top:12px;
+    }
+    .slider01 .slick-dots li{
+        margin:0 4px;
+    }
+    .slider01 .slick-dots li button{
+        width:8px;
+        height:8px;
+        border-radius:4px;
+        text-indent:-9999px;
+        overflow:hidden;
+        background: #151617;
+        opacity: 0.2;
+    }
+    .slider01 .slick-dots li.slick-active button{
+        background:  #E30613;
+        opacity: 1;
+    }
+
+}
