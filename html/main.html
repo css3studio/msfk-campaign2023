@@ -10,14 +10,36 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" media="all" href="../style.css" />
     <link rel="stylesheet" href="//unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" media="all" href="../css/style-build.css" />
+    <script src="//code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
     <script>
         var controller;
         document.addEventListener("DOMContentLoaded", () => {
             controller = new ScrollMagic.Controller();
         });
     </script>
+    <!-- Page hiding snippet (recommended) -->
+    <style>.async-hide { opacity: 0 !important} </style>
+    <script>
+    (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;
+    h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+    (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);
+    })(window,document.documentElement,'async-hide','dataLayer',2000,{'GTM-PCTTRC7':true});
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PCTTRC7');</script>
+    <!-- End Google Tag Manager -->
+
 </head>
 <body class="group home">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCTTRC7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div id="main-wrap" class="relative overflow-hidden">
         <div id="skip-link">
             <a class="block w-full h-10 leading-10 text-center absolute -top-10 focus:top-0 left-0 bg-white z-50" href="#main-content">컨텐츠 바로가기</a>
@@ -39,7 +61,7 @@
         <a id="main-content" tabindex="-1"></a>
         <div class="layout-content">
             <!--section 1 -->
-            <section class="bg-[url('../images/bg-01.png')] bg-cover" id="section1">
+            <section class="lg:bg-[url('../images/bg-01.png')] bg-[url('../images/bg-01-mo.png')] bg-cover" id="section1">
                 <div class="container relative lg:h-[960px] h-[640px]">
                     <div class="absolute inline-block z-20 lg:top-8 lg:right-0 lg:left-[initial] lg:bottom-[initial] left-0 bottom-10 w-full lg:w-auto px-4 lg:px-0">
                         <a href="https://donate.msf.or.kr/msfk/pay/step1_direct?dontype=P582001&period=pledge&price=20000&background=b027&utm_source=collab&utm_medium=comm&&utm_campaign=Collab_Apr2023&motivecode=DG701&channelcode=DG1002" class="lg:inline-block block text-center text-white bg-primary lg:text-lg lg:py-4 py-3 px-16 rounded-full break-keep hover:bg-secondary">
@@ -228,9 +250,9 @@
                 <div>
                     <img id="img0501" class="hidden lg:block absolute left-1/2 -ml-[210px] top-[92px] w-[296px]" src="../images/img-05-01.png" alt="비행기1">
                     <img id="img0502" class="absolute lg:left-1/2 lg:ml-[590px] lg:top-[33px] lg:w-[251px] left-[200px] top-[60px] w-[140px]" src="../images/img-05-02.png" alt="비행기2">
-                    <img id="img0503" class="absolute lg:left-1/2 lg:ml-[20px] lg:top-[516px] lg:w-[136px]  -left-[60px] top-[400px] w-[90px]" src="../images/img-05-03.png" alt="미사일">
+                    <img id="img0503" class="absolute lg:left-1/2 lg:ml-[20px] lg:top-[516px] lg:w-[136px]  -left-[100px] top-[350px] w-[90px]" src="../images/img-05-03.png" alt="미사일">
                     <img id="img0504" class="hidden lg:block absolute left-1/2 -ml-[580px] bottom-0 w-[224px]" src="../images/img-05-04.png" alt="탱크">
-                    <img id="img0505" class="absolute lg:left-1/2 lg:ml-[220px] lg:bottom-0 lg:w-[565px] left-[0px] top-[460px] w-[360px]" src="../images/img-05-05.png" alt="전쟁">
+                    <img id="img0505" class="absolute lg:left-1/2 lg:ml-[220px] lg:bottom-0 lg:w-[565px] left-[0px] bottom-0 w-[360px]" src="../images/img-05-05.png" alt="전쟁">
                 </div>
             </section>
             <script>
@@ -457,11 +479,11 @@
             <!--//section 8 -->
             <!--section 9 -->
             <section class="relative lg:py-[120px] py-[48px] bg-[#F9F9F9]" id="section9">
-                <div class="text-secondary container text-center lg:mb-12 mb-6" data-aos="fade-in">
+                <div class="text-secondary container text-center lg:mb-12 mb-6" data-aos="fade-in" data-aos-offset="-200">
                     <h2 class="lg:text-[64px] text-[32px] font-bold leading-tight tracking-tight mb-6">오시는 길</h2>
                 </div>
                 <!--지도-->
-                <div class="container lg:h-[488px] h-[280px] lg:mb-12 mb-6 overflow-hidden" data-aos="fade-up">
+                <div class="container lg:h-[488px] h-[280px] lg:mb-12 mb-6 overflow-hidden" data-aos="fade-up" data-aos-offset="-200">
                     <!-- * 카카오맵 - 지도퍼가기 -->
                     <!-- 1. 지도 노드 -->
                     <div id="daumRoughmapContainer1679387317588" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%"></div>
@@ -495,7 +517,7 @@
                     </script>
                 </div>
                 <!--//지도-->
-                <div class="container lg:flex" data-aos="fade-up">
+                <div class="container lg:flex" data-aos="fade-up" data-aos-offset="-200">
                     <dl class="lg:w-2/5 mb-6 lg:mb-0">
                         <dt class="text-primary text-lg font-bold flex items-center gap-1 mb-4">기간 <i class="xi-calendar text-2xl"></i></dt>
                         <dd>
@@ -527,7 +549,7 @@
             <!--//section 10 -->
 
             <!-- NEWLETTER -->
-            <section class="bg-primary lg:py-12 py-10"  data-aos="fade-in">
+            <section class="bg-primary lg:py-12 py-10"  data-aos="fade-in" data-aos-offset="-200">
                 <div class="container lg:flex items-center text-white">
                     <div class="lg:w-1/2 flex-shrink-0 mb-8 lg:mb-0">
                         <h2 class="text-2xl font-bold">
@@ -571,16 +593,21 @@
                         내용을 친구들과 공유하고 <br class="lg:hidden">선물을 받아보세요!
                     </h2>
                     <div data-aos="fade-up" data-aos-offset="-200">
-                        <p class="inline-block lg:text-[32px] text-lg text-white font-bold bg-primary py-1 px-4 lg:mb-4 mb-2">이벤트 기간 3.28 - 4.16 </p><br>
+                        <p class="inline-block lg:text-[32px] text-lg text-white font-bold bg-primary py-1 lg:py-3 px-4 lg:mb-4 mb-2">이벤트 기간 3.28 - 4.16 </p><br>
                         <p class="lg:w-[53.4%] lg:text-lg text-sm font-pretendard leading-relaxed break-keep lg:mb-24"><b>MSF X THE HYUNDAI 사진전 “국경없는의사회가 마주한 생명의 순간들”</b>에 대한 사전 기대평 혹은 전시 감상평을 정성껏 작성해서 <b>내 온라인 채널</b>(대상: 인스타그램, 네이버 블로그, 트위터)에 <b>공유하고 해당 플랫폼 국경없는의사회 채널을 태그해 인증</b>해주세요.<br>
                             좋은 내용을 선정해 소정의 굿즈를 보내드립니다.</p>
                     </div>
                     <div class="lg:absolute right-0 top-[169px] text-right mb-2 lg:mb-0" data-aos="fade-left"><img class="lg:w-[456px] w-[249px] inline-block" src="../images/photo-10.png" alt=""></div>
                     <ul class="flex justify-center lg:justify-start lg:text-3xl text-2xl text-white mb-4" data-aos="fade-up" data-aos-offset="-200">
-                        <li class="mr-5"><a class="lg:h-14 lg:w-14 h-10 w-10 rounded-full bg-[#3E3A39] flex justify-center items-center  hover:bg-primary" href="#" title="페이스북"><i class="xi-link -rotate-45"></i></a></li>
-                        <li class="mr-5"><a class="lg:h-14 lg:w-14 h-10 w-10 rounded-full bg-[#3E3A39] flex justify-center items-center  hover:bg-primary" href="#" title="카카오톡"><i class="xi-twitter"></i></a></li>
-                        <li class="mr-5"><a class="lg:h-14 lg:w-14 h-10 w-10 rounded-full bg-[#3E3A39] flex justify-center items-center  hover:bg-primary" href="#" title="네이버"><i class="xi-facebook"></i></a></li>
-                        <li class=""><a class="lg:h-14 lg:w-14 h-10 w-10 rounded-full bg-[#3E3A39] flex justify-center items-center  hover:bg-primary" href="#" title="유투브"><i class="xi-kakaotalk"></i></a></li>
+                        <li class="mr-5">
+                            <a class="lg:h-14 lg:w-14 h-10 w-10 rounded-full bg-[#3E3A39] flex justify-center items-center  hover:bg-primary" href="#" title="링크복사" id="btn_copy_url">
+                                <i class="xi-link -rotate-45"></i>
+                                <b class="hidden fixed text-sm top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center bg-primary py-3 px-6 rounded-full break-keep z-30">링크가 복사되었습니다.</b>
+                            </a>
+                        </li>
+                        <li class="mr-5"><a class="lg:h-14 lg:w-14 h-10 w-10 rounded-full bg-[#3E3A39] flex justify-center items-center  hover:bg-primary" href="#" title="트위터"><i class="xi-twitter"></i></a></li>
+                        <li class="mr-5"><a class="lg:h-14 lg:w-14 h-10 w-10 rounded-full bg-[#3E3A39] flex justify-center items-center  hover:bg-primary" href="#" title="페이스북"><i class="xi-facebook"></i></a></li>
+                        <li class=""><a class="lg:h-14 lg:w-14 h-10 w-10 rounded-full bg-[#3E3A39] flex justify-center items-center  hover:bg-primary" href="#" title="카카오톡"><i class="xi-kakaotalk"></i></a></li>
                     </ul>
                     <p class="font-pretendard text-[#6D6D6D] text-xs lg:text-base" data-aos="fade-up" data-aos-offset="-200">*상기 굿즈 이미지는 예시 이미지로 일부 실제와 다를 수 있습니다. <br class="lg:hidden">선정되신 분들은 각 플랫폼 국경없는의사회 채널을 통해 개별 연락 드릴 예정입니다.</p>
 
@@ -770,7 +797,6 @@
         <!--//모달08-04-->
 
     </div>
-    <script src="//code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="//unpkg.com/aos@next/dist/aos.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>

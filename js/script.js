@@ -55,7 +55,6 @@ $(document).ready(function() {
         device_status = "pc";
     }
 
-      /* 포스트뷰 > 추천칼럼 */
     $('.slider01 > ul').slick({
         enterMode: true,
         infinite: true,
@@ -65,6 +64,25 @@ $(document).ready(function() {
 
     });
 
+    //링크 주소 복사 버튼
+    $('a#btn_copy_url').click(function (event) {
+        var dummy   = document.createElement("input");
+        var text    = location.href;
+
+        document.body.appendChild(dummy);
+        dummy.value = text;
+        dummy.select();
+        document.execCommand('copy');
+        document.body.removeChild(dummy);
+
+        $(this).find('b').show();
+        var $this = $(this);
+
+        setTimeout(function () {
+            $this.find('b').fadeOut();
+        },2000);
+        event.preventDefault();
+    });
 
     //이미지 가로-세로 비율 - jquery
     $('img').each(function() {
