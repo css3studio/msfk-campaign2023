@@ -64,7 +64,16 @@ html.no-js{
 .slider01 .slick-arrow.slick-prev:after{
     content:"\e93d";
 }
-
+#stb_subscribe .stb_form_result.success p,
+#stb_subscribe .stb_form_msg_error {
+    color: #fff !important;
+}
+#stb_subscribe .stb_form_set {
+    overflow: visible !important;
+}
+#stb_subscribe .stb_form_set {
+    position: static !important;
+  }
 
 /* 모바일모드 공통 */
 @media screen and (min-width: 320px) and (max-width: 1023px) {
