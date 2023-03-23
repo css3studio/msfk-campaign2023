@@ -111,13 +111,14 @@ function close_modal() {
 
 //PC버젼 초기화
 function init_pc(){
-
+    $('.click-image').off();
 }
 //모바일 버젼 초기화
 function init_mobile(){
-
-
-
+    $('.click-image').click(function (event) {
+        $(this).siblings('a').click();
+        event.preventDefault();
+    });
 }
 
 
