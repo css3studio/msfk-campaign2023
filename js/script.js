@@ -34,7 +34,7 @@ $(document).ready(function() {
         AOS.init({
         once: true,
         offset: 0,
-        duration: 1500,
+        duration: 1000,
         delay: 0,
         anchorPlacement: 'top-center'
         });
