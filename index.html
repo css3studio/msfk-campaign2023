@@ -95,7 +95,7 @@
                         <p class="lg:text-[32px] text-base font-bold mb-2"><b class="inline-block bg-secondary lg:px-2 px-1 text-white mr-2 py-0 lg:py-3">국경없는의사회 사진전</b>으로 초대합니다.</p>
                         <p class="lg:text-2xl text-base font-semibold">2023.4.11 ~ 4.24   <br class="lg:hidden">현대백화점 판교점 10층 토파즈홀</p>
                     </div>
-                    <p class="text-white lg:text-sm text-xs absolute lg:bottom-4 bottom-3 right-4">©MSF/Dalila Mahdawi</p>
+                    <p class="flex items-center text-white lg:text-sm text-xs absolute lg:bottom-4 bottom-3 right-4 hover:text-gray hover:cursor-pointer" onclick="open_modal('modal-01');return false;">2021년 7월. ©MSF/Dalila Mahdawi<i class="xi-plus ml-4 text-2xl"></i></p>
                 </div>
             </section>
             <!--//section 1 -->
@@ -203,8 +203,8 @@
                             <b class="inline-block bg-white text-primary px-2 lg:py-0 py-1 mr-1 mb-2">생명의 순간들</b>에<br>
                             대한 소식이 들려옵니다.
                         </h2>
-                        <p class="text-white lg:text-sm text-xs absolute lg:bottom-4 bottom-3 left-4 right-4">
-                            국경없는의사회 의료진이 의료열차에 마련된 병상으로 중증 부상자를 옮기고 있다. 2022년 5월. ©Andrii Ovod
+                        <p class="flex items-center text-white lg:text-sm text-xs absolute lg:bottom-4 bottom-3 left-4 right-4 hover:text-gray hover:cursor-pointer" onclick="open_modal('modal-03');return false;">
+                            국경없는의사회 의료진이 의료열차에 마련된 병상으로 중증 부상자를 옮기고 있다. 2022년 5월. ©Andrii Ovod<i class="xi-plus ml-4 text-2xl"></i>
                         </p>
                     </div>
                 </div>
@@ -721,6 +721,29 @@
             </div>
         </footer>
 
+        <!--모달01-->
+        <div class="modal modal-01 fixed top-0 left-0 w-full h-full z-50" style="display:none">
+            <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50" onclick="close_modal();return false;"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-h-[calc(100vh-50px)] shadow-[4px_4px_2px_rgba(0,0,0,0.15)] w-full lg:w-auto">
+                <div class="lg:px-4 px-2 lg:pt-4 pt-2 lg:pb-12 pb-10 mx-4 lg:mx-0 bg-white">
+                    <div class="mb-6 lg:max-h-[576px] lg:w-[1008px] lg:h-[calc(100vh-216px)] overflow-hidden">
+                        <img class="w-full object-cover" src="./images/photo-01-modal.jpg" alt="">
+                    </div>
+                    <dl class="lg:flex lg:px-4 px-2">
+                        <dt class="text-2xl font-bold lg:w-[18%] flex-shrink-0 mb-2 lg:mb-0">수단</dt>
+                        <dd class="font-pretendard">
+                            <p class="lg:text-base text-sm mb-2">알 타니데바 캠프의 국경없는의사회 모성병원에서 몸무게 1.2 킬로그램으로 태어난 조산아 다윗. 2021년 7월. ©MSF/Dalila Mahdawi</p>
+                            <p class="text-sm text-[#878787]">국경없는의사회는 1978년부터 수단에서 활동하며 다양한 지역에서 프로젝트를 운영하고 있으며, 필요 시 긴급구호활동을 전개하고 있다.</p>
+                        </dd>
+                    </dl>
+                </div>
+                <a class="close lg:text-black text-white text-center absolute lg:right-8 lg:top-8 right-1/2 -bottom-[70px] lg:bottom-[initial] translate-x-1/2 lg:translate-x-0" href="#" onclick="close_modal();return false;">
+                    <i class="xi-close-thin lg:text-5xl text-3xl block"></i>
+                    <span>close</span>
+                </a>
+            </div>
+        </div>
+        <!--//모달01-->
         <!--모달02-->
         <div class="modal modal-02 fixed top-0 left-0 w-full h-full z-50" style="display:none">
             <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50" onclick="close_modal();return false;"></div>
@@ -744,6 +767,29 @@
             </div>
         </div>
         <!--//모달02-->
+        <!--모달03-->
+        <div class="modal modal-03 fixed top-0 left-0 w-full h-full z-50" style="display:none">
+            <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50" onclick="close_modal();return false;"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-h-[calc(100vh-50px)] shadow-[4px_4px_2px_rgba(0,0,0,0.15)] w-full lg:w-auto">
+                <div class="lg:px-4 px-2 lg:pt-4 pt-2 lg:pb-12 pb-10 mx-4 lg:mx-0 bg-white">
+                    <div class="mb-6 lg:max-h-[576px] lg:w-[1008px] lg:h-[calc(100vh-216px)] overflow-hidden">
+                        <img class="w-full object-cover" src="./images/photo-03-modal.jpg" alt="">
+                    </div>
+                    <dl class="lg:flex lg:px-4 px-2">
+                        <dt class="text-2xl font-bold lg:w-[18%] flex-shrink-0 mb-2 lg:mb-0">우크라이나</dt>
+                        <dd class="font-pretendard">
+                            <p class="lg:text-base text-sm mb-2">국경없는의사회 의료진이 의료열차에 마련된 병상으로 중증 부상자를 옮기고 있다. 2022년 5월. ©Andrii Ovod</p>
+                            <p class="text-sm text-[#878787]">국경없는의사회는 우크라이나 동부 전선에서 비교적 안전한 서부로 부상자를 이송하기 위해 우크라이나 철도청과 협력해 일반 열차를 의료지원이 가능한 열차로 개조했다.</p>
+                        </dd>
+                    </dl>
+                </div>
+                <a class="close text-white text-center absolute lg:right-8 lg:top-8 right-1/2 -bottom-[70px] lg:bottom-[initial] translate-x-1/2 lg:translate-x-0" href="#" onclick="close_modal();return false;">
+                    <i class="xi-close-thin lg:text-5xl text-3xl block"></i>
+                    <span>close</span>
+                </a>
+            </div>
+        </div>
+        <!--//모달03-->
         <!--모달04-->
         <div class="modal modal-04 fixed top-0 left-0 w-full h-full z-50" style="display:none">
             <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50" onclick="close_modal();return false;"></div>

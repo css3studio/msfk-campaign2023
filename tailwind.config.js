@@ -24,7 +24,8 @@ module.exports = {
     extend: {
       colors: {
         "primary": "#EE1922",
-        "secondary": "#151617"
+        "secondary": "#151617",
+        "gray": "#AAAAAA"
       },
       fontFamily: {
         "sans": ["GmarketSans", "sans-serif"],
