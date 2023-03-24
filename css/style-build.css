@@ -1166,10 +1166,6 @@ html{
   height: 100vh;
 }
 
-.max-h-\[calc\(100vh-50px\)\]{
-  max-height: calc(100vh - 50px);
-}
-
 .\!w-full{
   width: 100% !important;
 }
