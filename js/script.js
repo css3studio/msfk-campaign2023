@@ -22,6 +22,11 @@ $(window).resize(function() {
 		init_pc();
 		device_status = "pc";
 	}
+
+  $('.modal').each(function(){
+    $(this).find('dl').css('width',$(this).find('img').width());
+  });
+
 });
 
 $(window).scroll(function(event){
@@ -105,6 +110,7 @@ $(document).ready(function() {
 /* 메인 > 모달 오픈 */
 function open_modal(class_name) {
   $('.' + class_name).fadeIn();
+  $('.' + class_name).find('dl').css('width',$('.' + class_name).find('img').width());
   return false;
 }
 function close_modal() {

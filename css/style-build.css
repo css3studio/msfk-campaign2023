@@ -1126,6 +1126,10 @@ html{
   display: none;
 }
 
+.aspect-\[1008\/576\]{
+  aspect-ratio: 1008/576;
+}
+
 .aspect-\[328\/228\]{
   aspect-ratio: 328/228;
 }
@@ -1832,16 +1836,6 @@ html{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray{
-  --tw-text-opacity: 1;
-  color: rgb(170 170 170 / var(--tw-text-opacity));
-}
-
-.text-black{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .placeholder-\[\#ABABAB\]::-moz-placeholder{
