@@ -940,6 +940,10 @@ html{
   top: 950px;
 }
 
+.left-4{
+  left: 1rem;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -1166,6 +1170,26 @@ html{
   max-height: calc(100vh - 50px);
 }
 
+.max-h-\[calc\(90vh-50px\)\]{
+  max-height: calc(90vh - 50px);
+}
+
+.max-h-full{
+  max-height: 100%;
+}
+
+.max-h-\[calc\(100\%-50px\)\]{
+  max-height: calc(100% - 50px);
+}
+
+.max-h-\[90\%\]{
+  max-height: 90%;
+}
+
+.max-h-\[50vh\]{
+  max-height: 50vh;
+}
+
 .\!w-full{
   width: 100% !important;
 }
@@ -1308,6 +1332,10 @@ html{
 
 .w-screen{
   width: 100vw;
+}
+
+.w-1\/2{
+  width: 50%;
 }
 
 .max-w-\[1008px\]{
@@ -1501,6 +1529,16 @@ html{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#FFCECB\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 206 203 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#EEBDBA\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 189 186 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\.\.\/images\/bg-01-mo\.jpg\'\)\]{
   background-image: url('../images/bg-01-mo.jpg');
 }
@@ -1509,8 +1547,8 @@ html{
   background-image: url('../images/bg-02.png');
 }
 
-.bg-\[url\(\'\.\.\/images\/bg-03-01\.jpg\'\)\]{
-  background-image: url('../images/bg-03-01.jpg');
+.bg-\[url\(\'\.\.\/images\/bg-03-01\.png\'\)\]{
+  background-image: url('../images/bg-03-01.png');
 }
 
 .bg-\[url\(\'\.\.\/images\/bg-03-mo\.jpg\'\)\]{
@@ -1523,10 +1561,6 @@ html{
 
 .bg-\[url\(\'\.\.\/images\/bg-12\.jpg\'\)\]{
   background-image: url('../images/bg-12.jpg');
-}
-
-.bg-\[url\(\'\.\.\/images\/bg-03-01\.png\'\)\]{
-  background-image: url('../images/bg-03-01.png');
 }
 
 .bg-\[length\:100\%_auto\]{
@@ -1556,6 +1590,11 @@ html{
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-fill{
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .\!p-0{
@@ -1683,6 +1722,10 @@ html{
 
 .pt-\[56px\]{
   padding-top: 56px;
+}
+
+.pb-2{
+  padding-bottom: 0.5rem;
 }
 
 .text-center{
@@ -1921,6 +1964,10 @@ html.no-js{
   position: static !important;
 }
 
+.keep-all {
+  word-break: keep-all;
+}
+
 /* 모바일모드 공통 */
 
 @media screen and (min-width: 320px) and (max-width: 1023px) {
@@ -1948,6 +1995,30 @@ html.no-js{
     background:  #E30613;
     opacity: 1;
   }
+}
+
+.hover\:cursor-pointer:hover{
+  cursor: pointer;
+}
+
+.hover\:border-\[\#5A7498\]:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(90 116 152 / var(--tw-border-opacity));
+}
+
+.hover\:border-\[\#CDD6DE\]:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(205 214 222 / var(--tw-border-opacity));
+}
+
+.hover\:border-primary:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(238 25 34 / var(--tw-border-opacity));
+}
+
+.hover\:border-\[\#EEBDBA\]:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(238 189 186 / var(--tw-border-opacity));
 }
 
 .hover\:\!bg-black:hover{
@@ -2414,6 +2485,10 @@ html.no-js{
     width: auto;
   }
 
+  .lg\:w-\[50\%\]{
+    width: 50%;
+  }
+
   .lg\:max-w-\[800px\]{
     max-width: 800px;
   }
@@ -2440,10 +2515,6 @@ html.no-js{
 
   .lg\:bg-\[url\(\'\.\.\/images\/bg-03\.jpg\'\)\]{
     background-image: url('../images/bg-03.jpg');
-  }
-
-  .lg\:bg-\[url\(\'\.\.\/images\/bg-03\.png\'\)\]{
-    background-image: url('../images/bg-03.png');
   }
 
   .lg\:bg-\[length\:100\%_auto\]{
@@ -2539,6 +2610,14 @@ html.no-js{
 
   .lg\:pt-\[240px\]{
     padding-top: 240px;
+  }
+
+  .lg\:pb-4{
+    padding-bottom: 1rem;
+  }
+
+  .lg\:pb-8{
+    padding-bottom: 2rem;
   }
 
   .lg\:text-left{

@@ -57,6 +57,9 @@ $(document).ready(function() {
 
     $('.slider01 > ul').slick({
         enterMode: true,
+        draggable: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
         infinite: true,
         arrows: true,
         dots:true,
