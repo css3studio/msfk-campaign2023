@@ -1134,6 +1134,10 @@ html{
   aspect-ratio: 328/228;
 }
 
+.aspect-\[2400\/1563\]{
+  aspect-ratio: 2400/1563;
+}
+
 .\!h-auto{
   height: auto !important;
 }
@@ -2161,6 +2165,18 @@ html.no-js{
 
   .lg\:top-\[764px\]{
     top: 764px;
+  }
+
+  .lg\:-top-8{
+    top: -2rem;
+  }
+
+  .lg\:-right-12{
+    right: -3rem;
+  }
+
+  .lg\:-right-14{
+    right: -3.5rem;
   }
 
   .lg\:mx-0{
