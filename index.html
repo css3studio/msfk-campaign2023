@@ -39,21 +39,6 @@
     </script>
     <!-- Page hiding snippet (recommended) -->
     <style>.async-hide { opacity: 0 !important} </style>
-	<script>
-		var locationUrl = window.location.href;
-		var urlUtm;
-		urlUtm = locationUrl.split("?");
-		urlUtm = urlUtm[1];
-		var mUrl = "./mo/";
-		var userAgent = navigator.userAgent;
-		if (userAgent.match(/iPhone|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|LG|nokia|SonyEricsson/i) != null || userAgent.match(/LG|SAMSUNG|Samsung/) != null) {
-			// mobile
-			if (urlUtm !== undefined) {
-				var mUrl = mUrl + "?" + urlUtm;
-			}
-			window.location.href = mUrl
-		}
-	</script>
 	<!--후원하기 클릭시 utm물고 가는 코드-->
 	<script src="https://msf.or.kr/campaigns/PLUGIN_Custom/PLUGIN_Custom.js"></script>
 	<!--//후원하기 클릭시 utm물고 가는 코드-->
