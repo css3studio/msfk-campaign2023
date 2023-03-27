@@ -712,6 +712,10 @@ html{
   }
 }
 
+.static{
+  position: static;
+}
+
 .fixed{
   position: fixed;
 }
@@ -1130,12 +1134,12 @@ html{
   aspect-ratio: 1008/576;
 }
 
-.aspect-\[328\/228\]{
-  aspect-ratio: 328/228;
-}
-
 .aspect-\[2400\/1563\]{
   aspect-ratio: 2400/1563;
+}
+
+.aspect-\[328\/228\]{
+  aspect-ratio: 328/228;
 }
 
 .\!h-auto{
@@ -2043,6 +2047,10 @@ html.no-js{
     bottom: -80px;
   }
 
+  .lg\:-right-14{
+    right: -3.5rem;
+  }
+
   .lg\:bottom-0{
     bottom: 0px;
   }
@@ -2085,10 +2093,6 @@ html.no-js{
 
   .lg\:right-0{
     right: 0px;
-  }
-
-  .lg\:right-8{
-    right: 2rem;
   }
 
   .lg\:top-0{
@@ -2165,18 +2169,6 @@ html.no-js{
 
   .lg\:top-\[764px\]{
     top: 764px;
-  }
-
-  .lg\:-top-8{
-    top: -2rem;
-  }
-
-  .lg\:-right-12{
-    right: -3rem;
-  }
-
-  .lg\:-right-14{
-    right: -3.5rem;
   }
 
   .lg\:mx-0{
@@ -2497,10 +2489,6 @@ html.no-js{
     border-width: 16px;
   }
 
-  .lg\:bg-\[rgba\(0\2c 0\2c 0\2c 0\.3\)\]{
-    background-color: rgba(0,0,0,0.3);
-  }
-
   .lg\:bg-\[url\(\'\.\.\/images\/bg-01\.jpg\'\)\]{
     background-image: url('../images/bg-01.jpg');
   }
@@ -2677,11 +2665,6 @@ html.no-js{
 
   .lg\:leading-\[1\.5\]{
     line-height: 1.5;
-  }
-
-  .lg\:text-black{
-    --tw-text-opacity: 1;
-    color: rgb(0 0 0 / var(--tw-text-opacity));
   }
 
   .lg\:opacity-0{

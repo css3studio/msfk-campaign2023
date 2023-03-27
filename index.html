@@ -39,19 +39,60 @@
     </script>
     <!-- Page hiding snippet (recommended) -->
     <style>.async-hide { opacity: 0 !important} </style>
-    <script>
-    (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;
-    h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
-    (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);
-    })(window,document.documentElement,'async-hide','dataLayer',2000,{'GTM-PCTTRC7':true});
-    </script>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PCTTRC7');</script>
-    <!-- End Google Tag Manager -->
+	<script>
+		var locationUrl = window.location.href;
+		var urlUtm;
+		urlUtm = locationUrl.split("?");
+		urlUtm = urlUtm[1];
+		var mUrl = "./mo/";
+		var userAgent = navigator.userAgent;
+		if (userAgent.match(/iPhone|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|LG|nokia|SonyEricsson/i) != null || userAgent.match(/LG|SAMSUNG|Samsung/) != null) {
+			// mobile
+			if (urlUtm !== undefined) {
+				var mUrl = mUrl + "?" + urlUtm;
+			}
+			window.location.href = mUrl
+		}
+	</script>
+	<!--후원하기 클릭시 utm물고 가는 코드-->
+	<script src="https://msf.or.kr/campaigns/PLUGIN_Custom/PLUGIN_Custom.js"></script>
+	<!--//후원하기 클릭시 utm물고 가는 코드-->
+	<!-- Google Tag Manager -->
+	<script>
+		(function (w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start': new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-PCTTRC7');
+	</script>
+	<!-- End Google Tag Manager -->
+	<!-- Hotjar Tracking Code for msf.or.kr -->
+	<script>
+		(function (h, o, t, j, a, r) {
+			h.hj = h.hj || function () {
+				(h.hj.q = h.hj.q || []).push(arguments)
+			};
+			h._hjSettings = {
+				hjid: 548926,
+				hjsv: 6
+			};
+			a = o.getElementsByTagName('head')[0];
+			r = o.createElement('script');
+			r.async = 1;
+			r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+			a.appendChild(r);
+		})(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+	</script>
+	<!-- Hotjar Tracking Code for msf.or.kr -->
+
 
 </head>
 <body class="group home">
